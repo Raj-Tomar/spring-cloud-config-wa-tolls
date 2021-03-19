@@ -1,6 +1,6 @@
 This is Configuration Server for Spring Cloud Config Project
 
-================================================================================================
+============================================================
 Git Basic Commands
 	git init
 	git add .
@@ -38,4 +38,11 @@ Git Basic Commands
 
 		# Reset the upstream branch for the new_name local branch
 		git push <remote> -u <new_name>
-================================================================================================
+
+Undo a commit & redo
+	$ git commit -m "Something terribly misguided" # (0: Your Accident)
+	$ git reset HEAD~                              # (1)
+	[ edit files as necessary ]                    # (2)
+	$ git add .                                    # (3)
+	$ git commit -c ORIG_HEAD                      # (4)
+============================================================
